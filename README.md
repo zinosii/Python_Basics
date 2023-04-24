@@ -2,7 +2,7 @@
 Learning Python basics
 
 <details>
-<summary>ecorator</summary>
+<summary>decorator</summary>
   
 > deco.py 
 >   
