@@ -2,7 +2,7 @@
 Learning Python basics
 
 <details>
-<summary>Decorator</summary>
+<summary>ecorator</summary>
   
 > deco.py 
 >   
@@ -52,3 +52,37 @@ Learning Python basics
 > 그 이후 deco된 함수(test)가 실행될때는 내부함수만 실행되는것임.
 
 </details>
+
+<details>
+<summary>defaultdict</summary>
+
+> ``` 
+> defaultdict는 매우 간단함.
+> 기존의 dict는 key가 존재하는지 체크해주어야 하는데, defaultdict는 key가 없더라도 value값을 설정해줌.
+> 
+> 예를 들어, list의 요소가 key, 요소들의 출현횟수를 value로 갖는 dict를 선언할때, defaultdict로 선언 할 수 있음.
+> 이 때 defaultdict 의 value값을 명시해줄수있는데, int로 선언해줌.
+> ```
+> 
+> defaultdict.py
+> ```python
+> from collections import defaultdict
+> 
+> numbers=[1,4,5,1,3,10,8,4,1,1]
+> numbers_defaultdict=defaultdict(int)
+> 
+> for i in numbers:
+>     numbers_defaultdict[i]+=1
+> 
+> print(numbers_defaultdict)
+> ```
+> 
+> 위 코드의 출력결과는 
+> 
+> ```python
+> defaultdict(<class 'int'>, {1: 4, 4: 2, 5: 1, 3: 1, 10: 1, 8: 1})
+> ```
+
+</details>
+
+
