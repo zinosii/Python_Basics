@@ -85,8 +85,9 @@ Learning Python basics
 
 <details>
 
-<summary>function parameter</summary>
+<summary>function parameters</summary>
 
+>
 > function_parameters.py
 > ```python
 > 
